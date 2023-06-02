@@ -5,12 +5,7 @@ time.sleep(1)
 pos = pad.position()
 
 # Auto click
-pad.click(pos)
-pad.press('left')
-pad.press('left')
-pad.press('left')
-pad.press('left')
-pad.press('left')
-pad.press('right')
-pad.press('right')
-pad.press('right')
+for i in range(10):
+    pad.click(pos)
+    pad.write('Hello Ken Mom')
+    pad.press('enter')
